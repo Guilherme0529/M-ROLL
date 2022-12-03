@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>M'ROLL</title>
+    <link rel="icon" type="image/x-icon" href="img/M'ROLL.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">M'ROLL</a>
+            </div>
+            <div class="search-box">
+                <form>
+                    <input type="text" id="search-text" placeholder="Pesquisar...">
+                </form>
+            </div>
+            <ul class="menu-desktop">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <ul class="menu-mobile">
+                <div class="icon-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="search-box2">
+                    <form>
+                        <input type="text" id="search-text" placeholder="Pesquisar...">
+                    </form>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="bannerPrincipal">
+        <img src="img/Banner frete grátis para sites e lojas online colorido.png" alt="">
+    </div>
+    <section class="banner">
+        <div class="texto">
+            <h2 class="sub_titulo">Mais vendidos</h2>
+            <main>
+                <section class="produtos">
+                    <article class="botoes">
+                        <a href="#"><img src="img/Tagima_roxa-removebg-preview.png" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>Guitarra elétrica Tagima - <br> TG 510 MPP Metallic Purpple - Basswood</h2></a> 
+                        <br>
+                        <h3>R$ 1.060,00 <button>Comprar</button></h3>
+                    </article>
+                    <article class="botoes">
+                        <a href="#"><img src="img/guitarra preta.jpg" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>GUITARRA ELÉTRICA - MURIEL'S - DEEP DARK (PRETA) - <br> GTBM1954 - TONANTE</h2></a> 
+                        <br>
+                        <h3>R$ 846,38 <button>Comprar</button></h3>
+                    </article>
+                    <article class="botoes">
+                        <a href="#"><img src="img/guitarra_verde-removebg-preview.png" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>Guitarra Tagima TG510 Stratocaster - <br> Candy AppleGuitarra Tagima <br> TG510 Stratocaster
+                            - Candy
+                            Apple</h2></a> 
+                        <br>
+                        <h3>R$ 826,75 <button>Comprar</button></h3>
+                    </article>
+                    <article class="botoes">
+                        <a href="#"><img src="img/tg-520-removebg-preview.png" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>Guitarra elétrica TG-520 Black <br> Woodstock Series Tagima</h2></a> 
+                        <br>
+                        <h3>R$ 1.068,00 <button>Comprar</button></h3>
+                    </article>
+                    <article class="botoes">
+                        <a href="#"><img src="img/Les_Paul_amarela-removebg-preview.png" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>Guitarra Epiphone Les Paul Special Slash AFD Signature Amber</h2></a> 
+                        <br>
+                        <h3>R$ 3.199,00 <button>Comprar</button></h3>
+                    </article>
+                    <article class="botoes">
+                        <a href="#"><img src="img/guitarra_branca_2-removebg-preview.png" alt=""></a>
+                        <br>
+                        <br>
+                        <a href="#"><h2>Guitarra Strinberg Sts100 Wh Stratocaster</h2></a> 
+                        <br>
+                        <h3>R$ 776,00 <button>Comprar</button></h3>
+                    </article>
+                </section>
+                <script>
+                    var menuIcon = document.querySelector('.menu-icon');
+                    var menuMobile = document.querySelector('.menu-mobile');
+                    var iconClose = document.querySelector('.menu-mobile .icon-close')
+
+                    menuIcon.addEventListener('click', function(){
+                        menuMobile.classList.add('ativo');
+                    });
+                    iconClose.addEventListener('click', function(){
+                        menuMobile.classList.remove('ativo');
+                    });
+                </script>
+            </main>
+            <footer>
+                <div class="container-footer">
+                    <div class="row-footer">
+                        <!-- footer col -->
+                        <div class="footer-col">
+                            <h4>Empresa</h4>
+                            <ul>
+                                <li>
+                                    <a href="sobre.html">Sobre nós</a>
+                                </li>
+                                <li>
+                                    <a href="">Nossos serviços</a>
+                                </li>
+                                <li>
+                                    <a href="">Política de privacidade</a>
+                                </li>
+                                <li>
+                                    <a href="">Perguntas Frequentes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end footer col -->
+                        <!-- footer col -->
+                        <div class="footer-col">
+                            <h4>Obter ajuda</h4>
+                            <ul>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="">Transporte</a>
+                                </li>
+                                <li>
+                                    <a href="">Devoluções</a>
+                                </li>
+                                <li>
+                                    <a href="">Status de pedido</a>
+                                </li>
+                                <li>
+                                    <a href="">Opções de pagamento</a>
+                                </li>
+                            </ul>
+                            <div class="medias-sociais">
+                                <a href=""> <i class="fa fa-facebook"></i> </a>
+                                <a href=""> <i class="fa fa-instagram"></i> </a>
+                                <a href=""> <i class="fa fa-twitter"></i> </a>
+                                <a href=""> <i class="fa fa-linkedin"></i> </a>
+                            </div>
+                        </div>
+                        <!-- end footer col -->
+                        <!-- footer col -->
+                        <div class="footer-col">
+                            <p>Desenvolvido por Guilherme e Samily &copy; 2022</p>
+                        </div>
+                        <!-- end footer col -->
+                    </div>
+                </div>
+            </footer>
+</body>
+
+</html>
